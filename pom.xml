@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>github.com.helbertrios.demo.javase</groupId>
 	<artifactId>demo-javase</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>javase-team</name>
 	<description>Demo e Prova de Conceito do Java Standard Edition.</description>
@@ -12,6 +12,37 @@
 		<jdk.version>1.7</jdk.version>
 		<maven.compile.plugin.version>3.1</maven.compile.plugin.version>
 	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>releases-helbertrios</id>
+			<url>http://nexus-helbertrios.rhcloud.com/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots-helbertrios</id>
+			<url>http://nexus-helbertrios.rhcloud.com/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<profiles>
+		<profile>
+			<id>nexus-helbertrios</id>
+			<repositories>
+				<repository>
+					<id>public</id>
+					<name>Public Repositories</name>					
+					<url>http://nexus-helbertrios.rhcloud.com/nexus/content/groups/public/</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>jPublic Repositories Plugins</id>
+					<name>Public Plugins Repositorie</name>
+					<url>http://nexus-helbertrios.rhcloud.com/nexus/content/groups/public/</url>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
@@ -27,4 +58,13 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>github.com.helbertrios.nexusteste</groupId>
+			<artifactId>nexusteste</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
 </project>
