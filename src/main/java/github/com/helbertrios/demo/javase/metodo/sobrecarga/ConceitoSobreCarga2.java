@@ -1,4 +1,4 @@
-package github.com.helbertrios.demo.javase.sobrecarga;
+package github.com.helbertrios.demo.javase.metodo.sobrecarga;
 
 /**
  * Provar o conceito da sobre carga.
@@ -19,7 +19,7 @@ public class ConceitoSobreCarga2 extends ConceitoSobreCargaPai {
 
 	public static void main(String[] args) {
 		ConceitoSobreCarga2 conceitoSobreCarga = new ConceitoSobreCarga2();
-		//conceitoSobreCarga.sobrecarga(null);
+		conceitoSobreCarga.sobrecarga(null);
 		conceitoSobreCarga.sobrecarga( new B11() );
 		conceitoSobreCarga.sobrecarga( new B1111());
 		conceitoSobreCarga.sobrecarga( new B1112() );
@@ -31,10 +31,7 @@ public class ConceitoSobreCarga2 extends ConceitoSobreCargaPai {
 		return 0;
 	}
 	
-	public int sobrecarga(String s) {
-		System.out.println("int sobrecarga(String s)");
-		return 0;
-	}
+
 	/*public int sobrecarga(B12 b12) {
 		System.out.println("int sobrecarga(B12 b12)");
 		return 0;
