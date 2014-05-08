@@ -25,24 +25,27 @@
 	</distributionManagement>
 
 	<profiles>
-		<profile>
+		<profile>		
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>			
 			<id>nexus-helbertrios</id>
 			<repositories>
 				<repository>
-					<id>public</id>
-					<name>Public Repositories</name>
+					<id>nexus-helbertrios</id>
 					<url>http://nexus-helbertrios.rhcloud.com/nexus/content/groups/public/</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
 				<pluginRepository>
-					<id>jPublic Repositories Plugins</id>
-					<name>Public Plugins Repositorie</name>
+					<id>nexus-helbertrios</id>
 					<url>http://nexus-helbertrios.rhcloud.com/nexus/content/groups/public/</url>
 				</pluginRepository>
 			</pluginRepositories>
-		</profile>
+		</profile>		
 	</profiles>
+	
+	
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
