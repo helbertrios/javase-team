@@ -5,8 +5,17 @@ import java.io.IOException;
 
 @SuppressWarnings("unused")
 class Pai {
-	int getValor() throws  NullPointerException { return 1;}
+	public static void main(String[] args) {
+	  A a = new A();
+	  System.out.println(a.x);
+	//  System.out.println(A.x);
+	  
+	}
 	
+	int getValor() throws  NullPointerException { return 1;}
+	static class A {
+		public int x;
+	}
 }
 
 
