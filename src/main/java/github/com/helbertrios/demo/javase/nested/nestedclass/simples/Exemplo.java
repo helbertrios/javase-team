@@ -1,4 +1,4 @@
-package github.com.helbertrios.demo.javase.nestedclass.simples;
+package github.com.helbertrios.demo.javase.nested.nestedclass.simples;
 
 class Exemplo {
 	
