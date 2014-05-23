@@ -8,7 +8,9 @@ public class Exemplo {
 	
 	public static void main(String[] args) {
 		A a = new Exemplo().new A();
-		
+		Exemplo.A az = new Exemplo().new A();
+		Exemplo e = new Exemplo();
+		Exemplo.A ax = new to.A();
 		
 		Exemplo e = new Exemplo();
 		A a1 = e.new A();

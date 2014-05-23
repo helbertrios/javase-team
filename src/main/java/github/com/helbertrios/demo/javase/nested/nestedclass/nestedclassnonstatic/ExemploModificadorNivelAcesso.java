@@ -1,4 +1,4 @@
-package github.com.helbertrios.demo.javase.nested.nestedclass.nestedclassnonstatic.simples;
+package github.com.helbertrios.demo.javase.nested.nestedclass.nestedclassnonstatic;
 
 class ExemploModificadorNivelAcesso {
 	
