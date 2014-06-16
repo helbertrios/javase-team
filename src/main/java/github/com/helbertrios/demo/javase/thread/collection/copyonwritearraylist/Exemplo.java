@@ -18,7 +18,6 @@ public class Exemplo {
 			System.out.println(s);
 		}
 		
-		ArrayBlockingQueue
 
 	}
 	
