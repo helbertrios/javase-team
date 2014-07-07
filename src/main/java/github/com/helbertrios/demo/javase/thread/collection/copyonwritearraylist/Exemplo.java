@@ -1,6 +1,5 @@
 package github.com.helbertrios.demo.javase.thread.collection.copyonwritearraylist;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -17,8 +16,7 @@ public class Exemplo {
 		for (String s : lista) {
 			System.out.println(s);
 		}
-		
-
+				
 	}
 	
 	static class A extends Thread {

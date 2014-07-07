@@ -2,8 +2,8 @@ package github.com.helbertrios.demo.javase.thread.volatilememory;
 
 public class Exemplo {
 	
-	//private static volatile int I = 0;
-	private static int I = 0;
+	private static volatile int I = 0;
+	//private static int I = 0;
 
 	
 	public static void main(String[] args) throws InterruptedException {
