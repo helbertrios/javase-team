@@ -1,8 +1,9 @@
-package github.com.helbertrios.demo.javase.abstractclass;
+package github.com.helbertrios.demo.javase.abstractmodifier.abstractclass;
 
 public class Exemplo {
 
 }
+
 
 
 abstract class X {
