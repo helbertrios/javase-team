@@ -36,14 +36,13 @@ interface I2 {
 }
 	
 class Exemplo implements I1, I2{
-
+	
 	public void m1() { System.out.println("Hello"); }
 		   
 	public static void main(String[] args) {
-
 		long a = 10, b = 20;
 		long c = b % a;
-		System.out.println(c);
-		
+		System.out.println(c);		
 	}
+	
 }

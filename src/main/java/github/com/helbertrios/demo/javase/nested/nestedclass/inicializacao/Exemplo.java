@@ -34,4 +34,7 @@ public class Exemplo {
 class X {
 	//B b1 = new B();
 	Exemplo.B b2 = new Exemplo.B();
+	Exemplo ex = new Exemplo();
+	Exemplo.A a = ex.new A();
+//	A a = ex.new A();
 }
